@@ -1,0 +1,96 @@
+Test Case IDModule,Test Scenario / Description,Test Scenario / Description,Expected Result,Actual Result,Status,
+TC_LOGIN_01,"Login
+Verify login with valid 
+credentials.","1. Open login page.
+2. Enter valid username.
+3. Enter valid password.
+4. Click Login button.
+","User should successfully log in
+ and view inventory page.","User successfully redirected to 
+inventory page.",Pass,
+TC_LOGIN_02,"Login
+Verify login with valid username 
+and invalid password.","1.  Open login page.
+2.  Enter valid username.
+3.  Enter invalid password.
+4.  Click Login button.","Error message should display mismatch
+ warning.",Error message displayed correctly.,Pass,
+TC_LOGIN_03,"Login
+Verify login with unregistered 
+username.","1. Open login page.
+2. Enter invalid username.
+3. Enter any password.
+4. Click Login.",Error message should display.,Error message displayed.,Pass,
+TC_LOGIN_04,"Login
+Verify login with empty fields.","1. Open login page.
+2. Leave username and password blank.
+3. Click Login.
+","Error message should state username 
+is required.","Error message 
+displayed.",Pass,
+TC_LOGIN_05 ,"Login
+Verify login with locked-out 
+user account.","1. Open login page.
+2. Enter locked-out username.
+3. Enter valid password.
+4. Click Login.","Error message should state user
+ is locked out.","Error message 
+displayed.",Pass,      
+TC_CAT_01,"Product Catalog
+Verify product items load
+ properly.","1. Log into application.
+2. View product inventory screen.","All products show correct images, 
+names, and prices.",All items loaded correctly.,Pass,
+TC_CAT_02,"Product Catalog
+Verify sorting products A to Z.","1. Navigate to inventory.
+2. Select sort dropdown ""Name (A to Z)"".","Products are sorted alphabetically 
+from A to Z.",Products sorted correctly.,Pass,
+TC_CAT_03,"Product Catalog
+Verify sorting products Z to A.","1. Navigate to inventory.
+2. Select sort dropdown ""Name (Z to A)"".","Products are sorted alphabetically 
+from Z to A.",Products sorted correctly.,Pass,
+TC_CAT_04,"Product Catalog
+Verify sorting products 
+Price Low to High.","1. Navigate to inventory.
+2. Select sort dropdown 
+""Price (low to high)"".","Products are ordered from lowest 
+to highest price.",xProducts sorted correctly.,Pass,
+TC_CAT_05,"Product Catalog
+Verify sorting products Price High
+ to Low.","1. Navigate to inventory.
+2. Select sort dropdown
+ ""Price (high to low)"".","Products are ordered from highest 
+to lowest price.",Products sorted correctly.,Pass,
+TC_CART_01,"Cart,Verify adding a product
+ to cart.","1. View inventory.
+2. Click ""Add to cart"" on any product.","Button changes to ""Remove"", cart badge 
+updates to ""1"".",UI updated successfully.,Pass,
+TC_CART_02,"Cart,Verify adding multiple 
+products.",1. Add multiple items from inventory to cart.,"Cart badge count reflects total items 
+added accurately.",Badge count matched items.,Pass,
+TC_CART_03,"Cart
+Verify removing product from
+ inventory view.","1. Click ""Remove"" on an added product.","Button changes back to
+ ""Add to cart"", cart count decreases.",UI updated successfully.,Pass,
+TC_CART_04,"Cart
+Verify items persist in Cart page.",1. Add items.2. Click on the Cart icon.,"Selected items appear with correct
+ quantities and details.",Items matched inside cart.,Pass,
+TC_CHECK_01,"Checkout
+ Verify clicking Checkout button.","1. Open cart page.2. Click ""Checkout"" 
+button.",User is redirected to checkout info form.,Redirected successfully.,Pass,
+TC_CHECK_02,"Checkout
+Verify form validation for empty
+ fields.","1. Go to checkout info page.
+2. Leave all fields blank.
+3. Click Continue.","Error prompt states required fields are 
+missing.",Error displayed correctly.,Pass,
+TC_CHECK_03,"Checkout
+Verify valid checkout information 
+submission.","1. Enter valid First Name, Last Name, 
+and Postal Code.
+2. Click Continue.",User proceeds to checkout overview page.,User reached overview page.,Pass,
+TC_CHECK_04,"Checkout
+Verify order completion.","1. On overview page, review details.
+2. Click ""Finish"" button.","Order places successfully with 
+confirmation  message.
+",Confirmation screen displayed.,Pass,
